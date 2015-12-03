@@ -1,0 +1,168 @@
+@import "compass/reset";
+@import "compass/css3";
+
+
+// base colore sheme
+//-----------------------------------------------------------------------------
+
+$fiolet: #472444;
+$lightFiolet: #7F4365;
+$lightGreen: #68C1AD;
+$Orange: #F8A755;
+$hotOrange: #F68750;
+$font-color-black: #61584F;
+$font-color-whiteBg: #EDEDE5;
+$lightGree: #EAE8DC;
+
+
+// typography
+//-----------------------------------------------------------------------------
+
+@import "http://webfonts.ru/import/arnamu.css";
+//font-family: 'Arian AMU';
+//font-weight: normal;
+//font-style: normal;
+@import "http://webfonts.ru/import/azoft.css";
+//font-family: 'Azoft Sans';
+//font-weight: bold;
+//font-style: normal;
+@import "http://webfonts.ru/import/days.css";
+//font-family: 'Days';
+//font-weight: normal;
+//font-style: normal;
+
+$base-font-size: 16px;
+
+body {
+  font-size: $base-font-size;
+  font-family: helvetica, sans-serif;
+  line-height: 1.5em;
+  color: rgba($font-color-whiteBg, 0.9);
+}
+
+h1 {
+  font-family: 'Azoft Sans';
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  color: $font-color-black;
+  font-size: 1.3em;
+  margin-bottom: 1.5em;
+}
+
+p {
+  font-family: 'Arian AMU';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1em;
+  margin-bottom: 1.5em;
+  text-align: justify;
+  text-justify: auto;
+  max-width: 480px;
+}
+
+a {
+  text-decoration: none;
+  color: rgba($hotOrange, 0.9);
+  font-weight: bold;
+  padding: 2px 5px;
+  font-style: italic;
+  @include transition-property(all);
+  @include transition-duration(0.2s);
+  @include transition-timing-function(ease-in);
+  &:hover {
+    color: $Orange;
+    background: rgba($font-color-black, 0.6);
+    @include border-radius(5px);
+  }
+}
+
+#white {
+  p {
+    color: $font-color-black;
+  }
+}
+
+#fiolet {
+  h1 {
+    color: rgba($font-color-whiteBg, 0.8);
+  }
+
+}
+
+#orange {
+  a {
+    color: rgba($fiolet, 0.6);
+    &:hover {
+      color: $Orange;
+    }
+  }
+}
+
+
+// base layout
+//-----------------------------------------------------------------------------
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: $lightGree;
+  section {
+    display: block;
+    min-height: 100%;
+    background: url(https://s3.amazonaws.com/webPublic/img/bg_triangle_mini.png) repeat-x $lightGree;
+    div.content {
+      padding: 40px 50px 0;
+      overflow: hidden;
+    }
+    &#fiolet {
+      background-color: $fiolet;
+    }
+    &#orange {
+      background-color: $hotOrange;
+    }
+    &#green {
+      background-color: $lightGreen;
+    }
+  }
+
+  
+// animate <h1> and <p>
+//-----------------------------------------------------------------------------
+  
+#fiolet, #orange, #white, #green {
+  div {
+      h1 {
+        position: relative;
+        left: 500px;
+        right: 0;
+        opacity: 0;
+        max-width: 100%;
+        @include transition-property(all);
+        @include transition-duration(0.2s);
+        @include transition-timing-function(ease-in);
+      }
+      p {
+        position: relative;
+        left: 0;
+        top: 800px;
+        opacity: 0;
+        @include transition-property(all);
+        @include transition-duration(0.5s);
+        @include transition-timing-function(ease-in);
+      }
+    }
+    &:hover {
+        h1 {
+          left: 0;
+          opacity: 1;
+        }
+        p {
+          top: 0;
+          opacity: 1;
+        }
+      }
+  }
+}
