@@ -1,11 +1,18 @@
+
+
 * {
   box-sizing: border-box;
 }
 body {
   transition: background 0.1s ease;
 }
+
+
+
 body #white div h1{
   vertical-align: middle;
+
+
   position: relative;
   left: 105%;
   right: 0;
@@ -20,7 +27,7 @@ body #white div h1{
   -moz-transition-duration: 4s;
   -o-transition-duration: 4s;
   -webkit-transition-duration: 4s;
-   transition-duration: 0.2s;
+   transition-duration: 0.8s;
    
 
   -moz-transition-timing-function: ease-in;
@@ -36,18 +43,23 @@ body #white div h1{
 
 body #white:hover h1{
   vertical-align: middle;
-  left: 1%;
+
+  left: 35%;
   opacity: 1;
+  
+
   
 
 }
 
 
 
+
+
 body #white div h5{
   vertical-align: middle;
-  position: static;
-  left: 105%;
+  position: relative;
+  left: 50%;
   right: 0;
   opacity: 0;
 
@@ -60,7 +72,7 @@ body #white div h5{
   -moz-transition-duration: 4s;
   -o-transition-duration: 4s;
   -webkit-transition-duration: 4s;
-   transition-duration: 0.2s;
+   transition-duration: 0.8s;
    
 
   -moz-transition-timing-function: ease-in;
@@ -69,14 +81,11 @@ body #white div h5{
   transition-timing-function: ease-in;
 
 
-  /*-webkit-transform: translateZ(0px);*/
-  /*-webkit-backface-visibility: hidden;  
-  backface-visibility: hidden;*/
 }
 
 body #white:hover h5{
   vertical-align: middle;
-  left: 10%;
+  left: -100%;
   opacity: 1;
   
 
@@ -88,7 +97,7 @@ body #white div h3{
   position: relative;
   left: 105%;
   right: 0;
-  opacity: 0;
+  opacity: 1;
 
   max-width: 100%;
 
@@ -99,7 +108,7 @@ body #white div h3{
   -moz-transition-duration: 4s;
   -o-transition-duration: 4s;
   -webkit-transition-duration: 4s;
-   transition-duration: 0.2s;
+   transition-duration: 0.8s;
    
 
   -moz-transition-timing-function: ease-in;
@@ -116,7 +125,7 @@ body #white div h3{
 
 body #white:hover h3{
   vertical-align: middle;
-  left: 37%;
+  left: 35%;
   opacity: 1;
   
 
@@ -139,7 +148,7 @@ body #white div h4{
   -moz-transition-duration: 4s;
   -o-transition-duration: 4s;
   -webkit-transition-duration: 4s;
-   transition-duration: 0.2s;
+   transition-duration: 0.8s;
    
 
   -moz-transition-timing-function: ease-in;
@@ -157,11 +166,12 @@ body #white div h4{
 
 body #white:hover h4{
   vertical-align: middle;
-  left: 80%;
+  left: 35%;
   opacity: 1;
   
 
 }
+
 
 
 
