@@ -1,3 +1,117 @@
+.fixed{
+  position:fixed;
+}
+
+
+
+
+@-webkit-keyframes mymove1 {
+    from {left: 105%;}
+    to {left: 35%;}
+
+}
+
+@-webkit-keyframes mymove1 {
+    from {left: 35%;}
+    to {left: -50%;}
+
+}
+
+.slideRight{vertical-align: middle;
+
+
+  position: relative;
+  left: 105%;
+  right: 0;
+  opacity: 0;
+
+  max-width: 100%;
+
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+
+
+  -webkit-animation: mymove 0.8s;
+  
+
+  -moz-transition-duration: 4s;
+  -o-transition-duration: 4s;
+  -webkit-transition-duration: 4s;
+   transition-duration: 2s;
+   
+
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;}
+
+
+body #white:hover .slideRight{
+  vertical-align: middle;
+  
+  left: -100%;
+  opacity: 1;
+
+
+  
+
+}
+
+
+  .slideLeft{vertical-align: middle;
+
+
+  position: relative;
+  left: 35%;
+  right: 0;
+  opacity: 0;
+
+  max-width: 100%;
+
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+
+  -webkit-animation: mymove1 0.8s ;
+  
+
+
+  -moz-transition-duration: 4s;
+  -o-transition-duration: 4s;
+  -webkit-transition-duration: 4s;
+   transition-duration: 0.8s;
+   
+
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+
+
+
+}
+
+
+body #white:hover .slideLeft{
+  vertical-align: middle;
+
+  left: -50%;
+  opacity: 1;
+
+
+  
+
+}
+
+
+
+
+
+
+
+
+
 
 
 * {
@@ -7,7 +121,7 @@ body {
   transition: background 0.1s ease;
 }
 
-
+/*
 
 body #white div h1{
   vertical-align: middle;
@@ -23,7 +137,55 @@ body #white div h1{
   -moz-transition-property: all;
   -o-transition-property: all;
   -webkit-transition-property: all;
-  transition-property: all;
+
+
+  -webkit-animation: mymove 0.8s;
+  
+
+  -moz-transition-duration: 4s;
+  -o-transition-duration: 4s;
+  -webkit-transition-duration: 4s;
+   transition-duration: 0.8s;
+   
+
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+
+  
+}
+
+body #white:hover h1{
+  vertical-align: middle;
+
+  left: 35%;
+  opacity: 1;
+
+
+  
+
+}
+
+body #white div h6{
+  vertical-align: middle;
+
+
+  position: relative;
+  left: 50%;
+  right: 0;
+  opacity: 0;
+
+  max-width: 100%;
+
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+
+  -webkit-animation: mymove1 0.8s ;
+  
+
+
   -moz-transition-duration: 4s;
   -o-transition-duration: 4s;
   -webkit-transition-duration: 4s;
@@ -36,17 +198,13 @@ body #white div h1{
   transition-timing-function: ease-in;
 
 
-  /*-webkit-transform: translateZ(0px);*/
-  /*-webkit-backface-visibility: hidden;  
-  backface-visibility: hidden;*/
 }
 
-body #white:hover h1{
+body #white:hover h6{
   vertical-align: middle;
 
-  left: 35%;
+  left: -20%;
   opacity: 1;
-  
 
   
 
@@ -117,9 +275,6 @@ body #white div h3{
   transition-timing-function: ease-in;
 
 
-  /*-webkit-transform: translateZ(0px);*/
-  /*-webkit-backface-visibility: hidden;  
-  backface-visibility: hidden;*/
 }
 
 
@@ -156,10 +311,6 @@ body #white div h4{
   -webkit-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 
-
-  /*-webkit-transform: translateZ(0px);*/
-  /*-webkit-backface-visibility: hidden;  
-  backface-visibility: hidden;*/
 }
 
 
@@ -170,7 +321,7 @@ body #white:hover h4{
   opacity: 1;
   
 
-}
+}*/
 
 
 
