@@ -2,6 +2,45 @@
 /* Javascript Document */
 $( document ).ready(function() { 
 
+
+/*var scrolLeft = $(window).scrollLeft();
+var windw = $(window).width();//important
+var documet = $(document).width();
+$(window).scroll(function() {
+    if($(window).scrollLeft() + windw == documet){
+        console.log("right!");
+        location.href="#1"; 
+    }
+});*/
+
+$(".content").on("scroll", function () {
+        var cur = $(this).scrollLeft();
+        if (cur == 0) {
+            location.href="#1"; 
+        } 
+        else {
+            var max = $(this)[0].scrollWidth - $(this).parent().width();
+            if (cur == max) {
+                location.href="#2";
+            } else {
+                /*$('#container').addClass('shadow-right shadow-left');*/
+            }
+        }
+    });
+
+$(".content").on("scroll", function () {
+        var cur = $(this).scrollRight();
+        if (cur == 0) {
+            location.href="#1"; 
+        } 
+        else {
+            
+        }
+    });
+
+
+
+
   /* ---------- */
  /* $( window ).ready(function() {
   
