@@ -3,6 +3,7 @@
 $( document ).ready(function() { 
 
 
+
 /*var scrolLeft = $(window).scrollLeft();
 var windw = $(window).width();//important
 var documet = $(document).width();
@@ -64,7 +65,7 @@ $(".content").on("scroll", function () {
   
 	$('.content').mousewheel(function(event, delta) {
 		event.preventDefault();
-		this.scrollLeft -= (delta * 30);
+		this.scrollLeft -= (delta * 100);
 		return false;
 	});
   
