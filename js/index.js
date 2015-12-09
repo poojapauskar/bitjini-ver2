@@ -14,7 +14,20 @@ $(window).scroll(function() {
     }
 });*/
 
+if (screen.width <= 800) {
+    $('#3').hide();
+    $('#5').show();
+  }else{
+    $('#5').hide();
+    $('#3').show();
+  }
+
+
 $(".content").on("scroll", function () {
+
+        location.href="#3";
+        /*alert("Started scrolling!");*/
+ 
         var cur = $(this).scrollLeft();
         if (cur == 0) {
             location.href="#1"; 
@@ -29,7 +42,7 @@ $(".content").on("scroll", function () {
         }
     });
 
-$(".content").on("scroll", function () {
+/*$(".content").on("scroll", function () {
         var cur = $(this).scrollRight();
         if (cur == 0) {
             location.href="#1"; 
@@ -37,7 +50,7 @@ $(".content").on("scroll", function () {
         else {
             
         }
-    });
+    });*/
 
 
 
@@ -65,9 +78,16 @@ $(".content").on("scroll", function () {
   
 	$('.content').mousewheel(function(event, delta) {
 		event.preventDefault();
-		this.scrollLeft -= (delta * 100);
+		this.scrollLeft -= (delta * 120);
 		return false;
 	});
+
+  $('body').mousewheel(function(event, delta) {
+    event.preventDefault();
+    this.scrollTop -= (delta * 110);
+    return false;
+  });
+  
   
 
   $anchodeuna = $('.content li').width();
