@@ -1,3 +1,85 @@
+/*.img2{
+  visibility: hidden;
+}*/
+
+.half3 {
+    height: 50%;
+    width:100%;
+}
+.half4 {
+    height: 50%;
+    width:100%;
+}
+
+
+* {
+    margin: 0; padding: 0;
+}
+html, body, #container1 {
+    height: 100%;
+    width:100%;
+}
+/*header {
+    height: 50px;
+    background: gray;
+}*/
+main {
+    height: 100%;
+    
+}
+.half1 {
+    height: 50%;
+    width:100%;
+}
+.half2 {
+    height: 50%;
+    width:100%;
+}
+.half1{
+    background: white;
+}
+.half2{
+    background: orange;
+
+}
+
+
+.navbar-default {
+    background-color: #F8F8F8 ;
+    padding:25px;
+}
+
+.navbar-brand img {
+width: 65% \9; /*Force IE10 and below to size SVG images correctly*/
+max-width: 65%;
+margin-top:-13%
+}
+
+.nav .active { background:blue }
+
+.navbar { 
+  borderr: transparent  !important;
+  color:yellow;
+}
+
+
+ul.nav a { color: green !important;font-family: Roboto-Regular; font-weight:normal;}
+ul.nav a:hover { color: blue  !important; }
+
+.navbar-brand img {
+    width: 50% \9; /*Force IE10 and below to size SVG images correctly*/
+    max-width: 50% !important;
+    margin-top:-9%;
+    margin-left:-8%;
+}
+.navbar-default {
+    background-color: #D8D8D8 ;
+    padding:25px;
+}
+
+
+
+
 /**, *:before, *:after {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
  }*/
@@ -32,7 +114,7 @@ body {
 
 
 body section div.content2 {
-  padding: 50px 50px 0px 10px;
+  padding: 0px 0px 0px 0px;
   /*margin-left: -6000%,*/
   overflow: hidden;
 
@@ -132,7 +214,7 @@ html, body {
 .main-container {
   
   max-width: 100%;
-  margin: 25px 25px auto;
+  /*margin: 25px 25px auto;*/
   position: relative;
 }
 
@@ -202,7 +284,7 @@ html, body {
 
   
   .main-container {
-    margin: 20px 15px;
+    /*margin: 20px 15px;*/
   }
   
   .animation-element, 
